@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPDF - PDF inédits d'Afrique</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="EduPDF">
+                <span>EduPDF</span>
+            </a>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher des documents...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="pages/auth/dashboard.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="pages/auth/search.html"><i class="fas fa-search"></i> Explorer</a>
+                <a href="pages/auth/upload.html"><i class="fas fa-upload"></i> Partager</a>
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <a href="pages/auth/login.html" class="btn btn-primary">Connexion</a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Découvrez des <span>PDF inédits</span> d'Afrique</h1>
+                <p class="hero-subtitle">La plus grande bibliothèque de documents académiques et historiques africains</p>
+                
+                <div class="hero-search">
+                    <input type="text" placeholder="Rechercher par titre, auteur ou mot-clé...">
+                    <button class="btn btn-primary">Rechercher</button>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="assets/images/hero-africa.svg" alt="Afrique" class="float-animation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir EduPDF ?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Contenu exclusif</h3>
+                    <p>Des documents uniques que vous ne trouverez nulle part ailleurs</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Accès illimité</h3>
+                    <p>Explorez des milliers de documents sans restriction</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Téléchargements rapides</h3>
+                    <p>Téléchargez vos PDF préférés en un clic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="documents">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Documents populaires</h2>
+                <a href="pages/auth/search.html" class="btn btn-outline">Voir tout</a>
+            </div>
+            
+            <div class="documents-grid" id="featured-documents">
+                <!-- Documents chargés dynamiquement -->
+                <div class="document-card">
+                    <div class="document-thumbnail">
+                        <div style="background:#f0f0f0; height:120px; display:flex; align-items:center; justify-content:center;">
+                            <i class="fas fa-file-pdf fa-3x" style="color:#E43B3B;"></i>
+                        </div>
+                        <div class="document-badge">Histoire</div>
+                    </div>
+                    <div class="document-content">
+                        <h3>Exemple de Document</h3>
+                        <p class="document-author">Auteur Inconnu</p>
+                        <div class="document-meta">
+                            <span><i class="fas fa-download"></i> 0</span>
+                            <a href="#" class="btn btn-sm">Voir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EduPDF</h3>
+                    <p>La référence des documents académiques africains</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Accueil</a>
+                    <a href="pages/auth/search.html">Explorer</a>
+                    <a href="pages/auth/upload.html">Partager</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>

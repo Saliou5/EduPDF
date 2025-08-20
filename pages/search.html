@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Recherche - EduPDF</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body>
+    <!-- Navbar -->
+    
+    <main class="search-container">
+        <div class="search-filters">
+            <h2>Filtres</h2>
+            
+            <div class="filter-group">
+                <h3>Catégories</h3>
+                <label><input type="checkbox" checked> Histoire</label>
+                <label><input type="checkbox"> Science</label>
+                <!-- Autres catégories -->
+            </div>
+            
+            <div class="filter-group">
+                <h3>Langues</h3>
+                <label><input type="checkbox" checked> Français</label>
+                <label><input type="checkbox"> Anglais</label>
+                <!-- Autres langues -->
+            </div>
+            
+            <div class="filter-group">
+                <h3>Date</h3>
+                <input type="range" min="1900" max="2025" value="2023">
+            </div>
+        </div>
+        
+        <div class="search-results">
+            <div class="search-header">
+                <h2>Résultats de recherche</h2>
+                <div class="sort-options">
+                    <select>
+                        <option>Trier par : Pertinence</option>
+                        <option>Plus récents</option>
+                        <option>Plus téléchargés</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="documents-grid" id="search-results">
+                <!-- Résultats chargés dynamiquement -->
+            </div>
+            
+            <div class="pagination">
+                <button class="btn btn-outline"><i class="fas fa-chevron-left"></i></button>
+                <span>Page 1 sur 5</span>
+                <button class="btn btn-outline"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/search.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

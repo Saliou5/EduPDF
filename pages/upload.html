@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Partager un document - EduPDF</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body>
+    <!-- Navbar -->
+    
+    <main class="upload-container">
+        <h1>Partager un document</h1>
+        
+        <form id="upload-form">
+            <div class="upload-dropzone" id="dropzone">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Glissez-déposez votre fichier PDF ici</p>
+                <span>ou</span>
+                <button type="button" class="btn btn-outline">Parcourir</button>
+                <input type="file" id="file-input" accept=".pdf" hidden>
+            </div>
+            
+            <div class="form-group">
+                <label>Titre du document*</label>
+                <input type="text" required>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Auteur(s)/Etablissement*</label>
+                    <input type="text" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Année de publication/composition</label>
+                    <input type="number" min="1900" max="2025">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Description*</label>
+                <textarea rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Catégories*</label>
+                <div class="tags-input">
+                    <input type="text" placeholder="Ajouter une catégorie...">
+                    <div class="tags-list"></div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Publier le document</button>
+        </form>
+    </main>
+
+    <script src="../assets/js/upload.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

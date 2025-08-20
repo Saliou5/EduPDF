@@ -1,0 +1,166 @@
+:root {
+    /* Couleurs light par défaut */
+    --primary: #E43B3B;
+    --primary-hover: #C53030;
+    --secondary: #F4C550;
+    --accent: #3BA16D;
+    
+    --text: #2D3748;
+    --text-light: #4A5568;
+    --text-lighter: #718096;
+    
+    --bg: #FFFFFF;
+    --bg-secondary: #F7FAFC;
+    --bg-tertiary: #EDF2F7;
+    
+    --border: #E2E8F0;
+    --border-dark: #CBD5E0;
+    
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+    --primary: #F56565;
+    --primary-hover: #E53E3E;
+    --secondary: #ECC94B;
+    --accent: #48BB78;
+    
+    --text: #FFFFFF;
+    --text-light: #CBD5E0;
+    --text-lighter: #A0AEC0;
+    
+    --bg: #1A202C;
+    --bg-secondary: #2D3748;
+    --bg-tertiary: #4A5568;
+    
+    --border: #4A5568;
+    --border-dark: #718096;
+    
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.25);
+}
+
+/* Classes thématiques */
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.border-primary {
+    border-color: var(--primary);
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.badge-secondary {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+/* Boutons */
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    border: 1px solid var(--border);
+    background-color: transparent;
+    color: var(--text);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-tertiary);
+}
+
+/* Cartes */
+.card {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+}
+
+/* Inputs */
+.input {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.2);
+}
+
+/* Spécifique au dark mode */
+.dark-only {
+    display: none;
+}
+
+[data-theme="dark"] .dark-only {
+    display: block;
+}
+
+[data-theme="dark"] .light-only {
+    display: none;
+}
+/* Système de notation */
+.star-rating {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    cursor: pointer;
+    display: inline-flex;
+    gap: 0.2rem;
+}
+
+.star-rating span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-left: 0.5rem;
+}
+
+/* Section commentaires */
+.comments-container {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 1rem;
+}
+
+.comment-card {
+    background: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}

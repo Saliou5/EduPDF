@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document - EduPDF</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf_viewer.min.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body>
+    <!-- Navbar -->
+    
+    <main class="document-container">
+        <div class="document-info">
+            <div class="document-header">
+                <h1 id="doc-title">Titre du Document</h1>
+                <div class="document-actions">
+                    <button class="btn btn-primary"><i class="fas fa-download"></i> Télécharger</button>
+                    <button class="btn btn-secondary"><i class="fas fa-bookmark"></i> Sauvegarder</button>
+                </div>
+            </div>
+            
+            <div class="document-meta">
+                <p><strong>Auteur :</strong> <span id="doc-author">Auteur Inconnu</span></p>
+                <p><strong>Publié le :</strong> <span id="doc-date">01/01/2023</span></p>
+                <p><strong>Catégorie :</strong> <span id="doc-category">Histoire</span></p>
+                <p><strong>Téléchargements :</strong> <span id="doc-downloads">124</span></p>
+            </div>
+            
+            <div class="document-description">
+                <h3>Description</h3>
+                <p id="doc-description">Description du document...</p>
+            </div>
+        </div>
+        
+        <div class="document-viewer">
+            <div id="pdf-viewer"></div>
+            
+            <div class="viewer-controls">
+                <button id="prev-page"><i class="fas fa-chevron-left"></i></button>
+                <span id="page-num">1 / 10</span>
+                <button id="next-page"><i class="fas fa-chevron-right"></i></button>
+                <button id="zoom-in"><i class="fas fa-search-plus"></i></button>
+                <button id="zoom-out"><i class="fas fa-search-minus"></i></button>
+            </div>
+      <section class="document-ratings">
+       <div class="rating-container">
+        <h3>Notez ce document</h3>
+        <div class="star-rating">
+            ★★★★★ <span>(4.2/5 - 15 votes)</span>
+        </div>
+      </div>
+    
+        <div class="comments-container">
+          <h3>Commentaires (3)</h3>
+          <form class="comment-form">
+            <textarea placeholder="Votre commentaire..."></textarea>
+            <button type="submit" class="btn btn-primary">Publier</button>
+          </form>
+        
+           <div class="comments-list">
+            <!-- Commentaires dynamiques -->
+           </div>
+        </div>
+      </section>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="../assets/js/pdf-viewer.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/ratings.js"></script>
+</body>
+</html>

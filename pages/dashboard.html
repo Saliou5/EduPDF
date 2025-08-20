@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de Bord - EduPDF</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body>
+    <!-- Navbar (identique à index.html) -->
+    
+    <main class="dashboard-container">
+        <div class="sidebar">
+            <div class="user-profile">
+                <img src="../assets/images/avatar.jpg" alt="Profil">
+                <h3>Saliou wassiou</h3>
+                <p>Membre Premium</p>
+            </div>
+            
+            <nav class="dashboard-nav">
+                <a href="#" class="active"><i class="fas fa-home"></i> Accueil</a>
+                <a href="#"><i class="fas fa-book"></i> Mes Documents</a>
+                <a href="#"><i class="fas fa-download"></i> Téléchargements</a>
+                <a href="#"><i class="fas fa-heart"></i> Favoris</a>
+                <a href="#"><i class="fas fa-cog"></i> Paramètres</a>
+            </nav>
+        </div>
+        
+        <div class="dashboard-content">
+            <h2>Bienvenue, Saliou</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Documents consultés</h3>
+                    <p>24</p>
+                </div>
+                <!-- 3 autres stat-cards -->
+            </div>
+            
+            <section class="recent-docs">
+                <h3>Vos documents récents</h3>
+                <div class="documents-grid" id="user-documents">
+                    <!-- Chargé via JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../assets/js/dashboard.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
