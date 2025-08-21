@@ -1,6 +1,3 @@
-Voici un README.md professionnel et complet pour votre projet EduPDF :
-
-```bash
 cd ~/edupdf-site
 
 cat > README.md << 'EOF'
@@ -16,6 +13,7 @@ Plateforme de ressources éducatives en format PDF pour l'apprentissage et l'ens
 - 📱 Accessible sur tous les appareils
 
 ## 📁 Structure du projet
+
 
 ```
 edupdf-site/
