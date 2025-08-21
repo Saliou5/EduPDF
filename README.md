@@ -71,7 +71,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 - Développeur : Saliou
 - GitHub : [@saliou5](https://github.com/saliou5)
-- Email : [votre-email@domain.com]
+- Email : [saliouwassiou5@gmail.com]
 
 ## 🙏 Remerciements
 
