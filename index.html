@@ -2,7 +2,7 @@
 <html lang="fr" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>EduPDF - PDF inédits d'Afrique</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/animations.css">
@@ -14,28 +14,38 @@
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/images/logo.svg" alt="EduPDF">
+                <i class="fas fa-book-open"></i>
                 <span>EduPDF</span>
             </a>
             
-            <div class="search-bar">
-                <input type="text" placeholder="Rechercher des documents...">
-                <button><i class="fas fa-search"></i></button>
+            <!-- Menu Desktop -->
+            <div class="nav-links desktop-menu">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="pages/search.html"><i class="fas fa-search"></i> Explorer</a>
+                <a href="pages/upload.html"><i class="fas fa-upload"></i> Partager</a>
+                <a href="pages/dashboard.html"><i class="fas fa-user"></i> Mon compte</a>
+                <button id="theme-toggle" class="btn btn-outline"><i class="fas fa-moon"></i></button>
             </div>
-            
-            <div class="nav-links">
-                <a href="pages/auth/dashboard.html"><i class="fas fa-home"></i> Accueil</a>
-                <a href="pages/auth/search.html"><i class="fas fa-search"></i> Explorer</a>
-                <a href="pages/auth/upload.html"><i class="fas fa-upload"></i> Partager</a>
-                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
-                <a href="pages/auth/login.html" class="btn btn-primary">Connexion</a>
-            </div>
-            
+
+            <!-- Menu Mobile -->
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </nav>
+
+    <!-- Menu Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="mobile-close"><i class="fas fa-times"></i></button>
+        <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+        <a href="pages/search.html"><i class="fas fa-search"></i> Explorer</a>
+        <a href="pages/upload.html"><i class="fas fa-upload"></i> Partager</a>
+        <a href="pages/dashboard.html"><i class="fas fa-user"></i> Mon compte</a>
+        <a href="pages/auth/login.html"><i class="fas fa-sign-in"></i> Connexion</a>
+        <button id="mobile-theme-toggle" class="btn btn-outline">
+            <i class="fas fa-moon"></i> Thème
+        </button>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -44,9 +54,28 @@
                 <h1 class="hero-title">Découvrez des <span>PDF inédits</span> d'Afrique</h1>
                 <p class="hero-subtitle">La plus grande bibliothèque de documents académiques et historiques africains</p>
                 
-                <div class="hero-search">
-                    <input type="text" placeholder="Rechercher par titre, auteur ou mot-clé...">
-                    <button class="btn btn-primary">Rechercher</button>
+                <div class="hero-cta">
+                    <a href="pages/search.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-search"></i> Explorer la bibliothèque
+                    </a>
+                    <a href="pages/upload.html" class="btn btn-secondary">
+                        <i class="fas fa-upload"></i> Partager un document
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Documents</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1K+</span>
+                        <span class="stat-label">Utilisateurs</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Auteurs</span>
+                    </div>
                 </div>
             </div>
             
@@ -72,19 +101,60 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-book-open"></i>
+                        <i class="fas fa-search"></i>
                     </div>
-                    <h3>Accès illimité</h3>
-                    <p>Explorez des milliers de documents sans restriction</p>
+                    <h3>Recherche avancée</h3>
+                    <p>Filtres par catégorie, langue, région et année de publication</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-download"></i>
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Téléchargements rapides</h3>
-                    <p>Téléchargez vos PDF préférés en un clic</p>
+                    <h3>Mobile First</h3>
+                    <p>Interface optimisée pour mobile et tablette Android</p>
                 </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Sécurisé</h3>
+                    <p>Protection des documents et respect de la vie privée</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Catégories populaires</h2>
+            
+            <div class="categories-grid">
+                <a href="pages/search.html?category=histoire" class="category-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Histoire</h3>
+                    <p>Documents historiques et archives</p>
+                </a>
+                
+                <a href="pages/search.html?category=litterature" class="category-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Littérature</h3>
+                    <p>Œuvres littéraires africaines</p>
+                </a>
+                
+                <a href="pages/search.html?category=science" class="category-card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Science</h3>
+                    <p>Recherches scientifiques</p>
+                </a>
+                
+                <a href="pages/search.html?category=economie" class="category-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Économie</h3>
+                    <p>Études économiques</p>
+                </a>
             </div>
         </div>
     </section>
@@ -94,24 +164,39 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Documents populaires</h2>
-                <a href="pages/auth/search.html" class="btn btn-outline">Voir tout</a>
+                <a href="pages/search.html" class="btn btn-outline">Voir tout</a>
             </div>
             
             <div class="documents-grid" id="featured-documents">
                 <!-- Documents chargés dynamiquement -->
                 <div class="document-card">
                     <div class="document-thumbnail">
-                        <div style="background:#f0f0f0; height:120px; display:flex; align-items:center; justify-content:center;">
-                            <i class="fas fa-file-pdf fa-3x" style="color:#E43B3B;"></i>
-                        </div>
+                        <img src="assets/images/doc-history.jpg" alt="Histoire Africaine">
                         <div class="document-badge">Histoire</div>
                     </div>
                     <div class="document-content">
-                        <h3>Exemple de Document</h3>
-                        <p class="document-author">Auteur Inconnu</p>
+                        <h3>Histoire de l'Afrique Moderne</h3>
+                        <p class="document-author">Dr. Cheikh Anta Diop</p>
                         <div class="document-meta">
-                            <span><i class="fas fa-download"></i> 0</span>
-                            <a href="#" class="btn btn-sm">Voir</a>
+                            <span><i class="fas fa-download"></i> 254</span>
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <a href="pages/document.html?id=histoire-afrique" class="btn btn-sm">Voir</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-thumbnail">
+                        <img src="assets/images/doc-literature.jpg" alt="Littérature">
+                        <div class="document-badge">Littérature</div>
+                    </div>
+                    <div class="document-content">
+                        <h3>Anthologie Littéraire Africaine</h3>
+                        <p class="document-author">Collectif d'Auteurs</p>
+                        <div class="document-meta">
+                            <span><i class="fas fa-download"></i> 187</span>
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <a href="pages/document.html?id=litterature" class="btn btn-sm">Voir</a>
                         </div>
                     </div>
                 </div>
@@ -119,32 +204,89 @@
         </div>
     </section>
 
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à découvrir des trésors cachés ?</h2>
+            <p>Rejoignez notre communauté de passionnés de connaissances africaines</p>
+            <div class="cta-buttons">
+                <a href="pages/auth/register.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-user-plus"></i> Créer un compte
+                </a>
+                <a href="pages/search.html" class="btn btn-outline">
+                    <i class="fas fa-search"></i> Explorer sans compte
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>EduPDF</h3>
-                    <p>La référence des documents académiques africains</p>
+                <!-- Section 1: Logo et description -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>EduPDF</span>
+                    </div>
+                    <p>La première plateforme de documents PDF africains inédits.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                
-                <div class="footer-col">
-                    <h4>Navigation</h4>
-                    <a href="index.html">Accueil</a>
-                    <a href="pages/auth/search.html">Explorer</a>
-                    <a href="pages/auth/upload.html">Partager</a>
+
+                <!-- Section 2: Navigation -->
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="pages/search.html">Recherche</a></li>
+                        <li><a href="pages/upload.html">Partager</a></li>
+                        <li><a href="pages/dashboard.html">Tableau de bord</a></li>
+                    </ul>
                 </div>
-                
-                <div class="footer-col">
-                    <h4>Légal</h4>
-                    <a href="#">Conditions d'utilisation</a>
-                    <a href="#">Politique de confidentialité</a>
+
+                <!-- Section 3: Catégories -->
+                <div class="footer-section">
+                    <h3>Catégories</h3>
+                    <ul>
+                        <li><a href="pages/search.html?category=histoire">Histoire</a></li>
+                        <li><a href="pages/search.html?category=litterature">Littérature</a></li>
+                        <li><a href="pages/search.html?category=science">Science</a></li>
+                        <li><a href="pages/search.html?category=economie">Économie</a></li>
+                    </ul>
                 </div>
+
+                <!-- Section 4: Contact et légal -->
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@edupdf.org</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</p>
+                    
+                    <div class="legal-links">
+                        <a href="pages/legal/privacy.html">Politique de confidentialité</a>
+                        <a href="pages/legal/terms.html">Conditions d'utilisation</a>
+                        <a href="pages/legal/cookies.html">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 EduPDF. Tous droits réservés.</p>
+                <p>Développé avec ❤️ pour la connaissance africaine</p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="assets/js/app.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/mobile.js"></script>
 </body>
-</html>
+</html>                    
