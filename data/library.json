@@ -1,0 +1,22 @@
+{
+    "documents": [
+        {
+            "id": "histoire-afrique",
+            "title": "Histoire de l'Afrique Moderne",
+            "author": "Dr. Cheikh Anta Diop",
+            "category": "Histoire",
+            "year": 2023,
+            "pages": 145,
+            "downloads": 254
+        },
+        {
+            "id": "litterature",
+            "title": "Anthologie de la Littérature Africaine",
+            "author": "Collectif d'Auteurs",
+            "category": "Littérature", 
+            "year": 2022,
+            "pages": 89,
+            "downloads": 187
+        }
+    ]
+}
