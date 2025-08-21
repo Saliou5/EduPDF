@@ -1,0 +1,26 @@
+{
+  "name": "edupdf",
+  "version": "1.0.0",
+  "description": "Site EduPDF - PDF inédits d'Afrique",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saliou5/edupdf.git"
+  },
+  "keywords": [
+    "pdf",
+    "africa",
+    "education",
+    "documents"
+  ],
+  "author": "Saliou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saliou5/edupdf/issues"
+  },
+  "homepage": "https://saliou5.github.io/edupdf"
+}
